@@ -5,7 +5,7 @@
 // @grant        GM_webRequest
 // @grant        GM_xmlhttpRequest
 // @match        *://gamersclub.com.br/*
-// @downloadURL  https://gdplus.github.io/releases/gdplus.user.js
+// @downloadURL  https://github.com/rafasouzabr/GCFree/raw/master/GC.user.js
 // @run-at       document-end
 // @noframes
 // ==/UserScript==
