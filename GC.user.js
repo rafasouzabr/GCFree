@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         GC Premium Free
-// @version      0.1
-// Atenção:      Caso algum site não funcione logo após a instalação, limpe o cache do navegador.
+// @description  Adiciona funcionalidade para Gamers Club
+// @version      0.3
+// @author       Rafael
 // @grant        GM_webRequest
 // @grant        GM_xmlhttpRequest
 // @match        *://gamersclub.com.br/*
@@ -13,6 +14,17 @@
 
 (function() {
     'use strict';
-    ISSUBSCRIBER = true; 
+    ISSUBSCRIBER = true;
+
+	setInterval(function(){
+         if ( document.getElementById('gameModalReadyBalls').style.display != "none" && $("#clock").text() <> "") {
+             lobby.setGameReady();
+             console.log('Ready Pronto');
+        }
+         if ( document.getElementsByClassName('preready-block').length > 0 ) {
+             setPreReady();
+             console.log('Pre-ready pronto');
+         }
+    },500); //change 500 to the time in MS to wait before each run.	
 
 })();
