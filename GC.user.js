@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GC Premium Free
 // @description  Adiciona funcionalidade para Gamers Club
-// @version      0.2
+// @version      0.3
 // @author       Rafael
 // @grant        GM_webRequest
 // @grant        GM_xmlhttpRequest
